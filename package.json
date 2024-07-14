@@ -1,0 +1,20 @@
+{
+  "name": "cypress-framework",
+  "version": "1.0.0",
+  "description": "cypress framework",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "cy:open": "cypress open",
+    "cy:run": " npx cypress run --browser chrome --headed",
+    "cy:cloudrun":"npx cypress run --browser chrome --record --key 8fcd7eea-402b-4fc0-990a-ba013e83f9ab"
+  },
+  "author": "rishi",
+  "license": "ISC",
+  "dependencies": {
+    "cypress": "^13.13.0"
+  },
+  "devDependencies": {
+    "cypress-mochawesome-reporter": "^3.8.2"
+  }
+}

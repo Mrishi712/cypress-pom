@@ -6,7 +6,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "cy:open": "cypress open",
-    "cy:run": " npx cypress run --browser chrome --headed",
+    "cy:run:chrome": " npx cypress run --browser chrome --headed",
+    "cy:run:chrome:headless": " npx cypress run --browser chrome --headless",
+    "cy:run:electrone": " npx cypress run --headed",
     "cy:cloudrun":"npx cypress run --browser chrome --record --key 8fcd7eea-402b-4fc0-990a-ba013e83f9ab"
   },
   "author": "rishi",

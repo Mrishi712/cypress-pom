@@ -117,4 +117,7 @@ dynamodb/
 .vscode-test
 
 #package-lock.json
-package-lock.json
+.package-lock.json
+
+#report files
+cypress/reports/orange-hrm-ui-test-report/**

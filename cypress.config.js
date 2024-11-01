@@ -10,14 +10,15 @@ module.exports = defineConfig({
     reportDir: 'cypress/reports/orange-hrm-ui-test-report',
     charts: true,
     reportPageTitle: 'UI Test Report',
+    reportFilename: 'ui-report.html',
     embeddedScreenshots: true,
     inlineAssets: true,
-    overwrite: false,
+    overwrite: true,
     autoOpen: false,
     code: true,
     html: false,
     json: false,
-    timestamp: 'mmddyyyy_HHMMss',
+    // timestamp: 'mmddyyyy_HHMMss',
     showPassed: true,
     saveAllAttempts: false,
     ignoreVideos: false
@@ -28,5 +29,6 @@ module.exports = defineConfig({
       require('cypress-mochawesome-reporter/plugin')(on);
 
     },
+    testIsolation: false
   },
 });

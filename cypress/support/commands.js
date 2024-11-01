@@ -23,3 +23,13 @@
 //
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
+
+// Custom commands to choose environment and load to page
+Cypress.Commands.add('navigateTo',()=>{
+    const currentBaseUrl = Cypress.env('prod')
+    cy.visit(currentBaseUrl)
+})
+
+Cypress.on('uncaught:exception', (err, runnable) => {
+    return false
+})
